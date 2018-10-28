@@ -1,0 +1,12 @@
+.table
+{
+    background-color:beige;
+    opacity: .60;
+}
+.principal
+{
+    position: relative;
+    min-height: 100%;
+    background: inherit;
+    height: 100%;
+}

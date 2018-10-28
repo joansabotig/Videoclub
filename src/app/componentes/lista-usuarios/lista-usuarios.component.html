@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    
+    <tbody *ngFor="let Usuario of usuarios   " (click)="seleccionar(Usuario)"> 
+      <!-- en vez de tareas era retorno. -->
+      <tr>
+        <th scope="row">{{Usuario.nombre}}</th>
+        <td > {{Usuario.apellido}}</td>
+        <td > {{Usuario.estado}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.bda
+{
+    position: absolute;
+    min-height: 100%;
+    background: inherit;
+    height: 100%;
+}

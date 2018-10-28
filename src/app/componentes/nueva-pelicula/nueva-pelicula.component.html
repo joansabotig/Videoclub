@@ -1,0 +1,34 @@
+<h1>
+  nueva pelicula
+</h1>
+<div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Titulo</span>
+    </div>
+    <input type="text" [(ngModel)]='titulo' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Descripcion</span>
+  </div>
+  <input type="text" [(ngModel)]='descripcion' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Genero</span>
+  </div>
+  <input type="text" [(ngModel)]='genero' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Link Imagen</span>
+  </div>
+  <input type="text" [(ngModel)]='imagen' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" (click)="nueva()">Aceptar</button>
+
+
+</div>

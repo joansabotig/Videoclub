@@ -1,0 +1,61 @@
+<div class="principal">
+  <div class="primero">
+      <div id="carouselExampleIndicators" class="carousel " data-ride="carousel" *ngIf="imagen_activa!=null">
+          <ol class="carousel-indicators" *ngFor="let id of pelis.id">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
+              <img class="d-block w-100" src={{imagen_activa}} alt="First slide" >
+            </div>
+          </div>
+          <a class="carousel-control-prev" (click)="prev()" role="button" data-slide="prev" >
+            
+            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" (click)="next()" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+  </div>
+  
+  
+  <div class="card">
+      <div class="box">
+          <div class="img">
+              <img src="https://f4.bcbits.com/img/0000710294_10.jpg">
+          </div>
+          <h2>Video Club Joan<br><span>Tu videoclub favorito</span></h2>
+          <p> para disfrutar de todas las peliculas
+              en la comodidad de tu casa con la mejor calidad
+          </p>
+          <div class="desaparecer">
+            <a class="a_lista" href="lista_peliculas">
+              <span data-text="P">P</span>
+              <span data-text="E">E</span>
+              <span data-text="L">L</span>
+              <span data-text="I">I</span>
+              <span data-text="C">C</span>
+              <span data-text="U">U</span>
+              <span data-text="L">L</span>
+              <span data-text="A">A</span>
+              <span data-text="S">S</span>
+            </a>
+          </div>
+         
+      </div>
+  </div>
+  
+  <div class="tercero">
+    <h4>Proximamente</h4>
+      <div class="video-container image-large">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/iaR4nJ6yypQ"frameborder="0" allowfullscreen></iframe>
+      </div>
+    
+  </div>
+</div>
+
+
+

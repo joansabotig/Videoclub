@@ -1,0 +1,46 @@
+<h1>
+    Modificar usuario
+  </h1>
+  <div>
+  
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+      </div>
+      <input type="text" [(ngModel)]='nombre' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
+    </div>
+    <input type="text" [(ngModel)]='apellido' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Usuario</span>
+    </div>
+    <input type="text" [(ngModel)]='usuario' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Contraseña</span>
+    </div>
+    <input type="text" [(ngModel)]='contrasenia' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
+      </div>
+      <input type="text" [(ngModel)]='telefono' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Correo</span>
+        </div>
+        <input type="text" [(ngModel)]='correo' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+  
+  <button type="button" class="btn btn-primary btn-lg" (click)="modificar()">Modificar</button>
+  
+  
+  </div>

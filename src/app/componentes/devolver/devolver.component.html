@@ -1,0 +1,25 @@
+<div class="contenedor">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" >Titulo</th>
+        <th scope="col">puntuacion</th>
+        <th scope="col">En posecion de</th>
+        <th scopa="col">Devolver</th>
+      </tr>
+    </thead>
+        
+    <tbody *ngFor="let Pelicula of peliculas   "> 
+      <tr>
+        <th scope="row">{{Pelicula.titulo}}</th>
+        <td>{{Pelicula.valoracion / Pelicula.cantidadAlquileres}} </td>
+        <td>{{quien(Pelicula.alquilada).nombre}} </td>
+        <button (click)="devolver(Pelicula)"  type="button" class="btn btn-dark">Devolver</button>
+      </tr>
+    </tbody>
+  </table>
+
+ 
+
+</div>

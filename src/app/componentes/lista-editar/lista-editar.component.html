@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col" >Titulo</th>
+        <th scope="col">puntuacion</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    
+    <tbody *ngFor="let Pelicula of peliculas   " (click)="seleccionar(Pelicula)"> 
+      <!-- en vez de tareas era retorno. -->
+      <tr>
+        <th scope="row">{{Pelicula.titulo}}</th>
+        <td>{{Pelicula.valoracion / Pelicula.cantidadAlquileres}} </td>
+        <td *ngIf="Pelicula.alquilada"> Alquilada</td>
+        <td *ngIf="!Pelicula.alquilada"> Disponible</td>
+      </tr>
+    </tbody>
+  </table>

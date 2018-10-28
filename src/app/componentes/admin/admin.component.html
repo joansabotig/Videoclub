@@ -1,0 +1,88 @@
+<div class="main-container">
+  <aside class="hit_sidebar open_sidbar sidebar-slide-push">
+      <img class="imgadmin" src="https://vignette.wikia.nocookie.net/daria/images/1/15/Admin.png/revision/latest?cb=20140902104042">
+      <h2 class="text2">Control de administrador</h2>
+      <ul>
+          <div class="item">
+                <li><a href="newuser">
+                <img class="peque" src="https://image.flaticon.com/icons/png/512/72/72648.png" alt="">
+                <span class="nav-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                <span class="remove_text">Nuevo usuario</span></a></li>
+            </div>
+            <div class="item">
+                    <li><a href="lista_usuarios" class="activ">
+                    <img class="peque" src="https://image.flaticon.com/icons/png/512/1/1663.png" alt="">
+                    <span class="nav-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                    <span class="remove_text">Editar usuario</span></a></li>
+            </div>
+            
+            <div class="item">
+                    <li><a href="newpelicula">
+                            <img class="peque" src="https://cdn.icon-icons.com/icons2/1349/PNG/512/addcircularbutton_87841.png" alt="">
+                    <span class="nav-icon"><i class="fa fa-inbox" aria-hidden="true"></i></span>
+                    <span class="remove_text"> Nueva pelicula</span></a></li>
+            </div>
+            <div class="item">
+                    <li><a href="lista_editar">
+                            <img class="peque" src="https://png.icons8.com/metro/1600/edit.png" alt="">
+                    <span class="nav-icon"><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+                    <span class="remove_text">Editar pelicula</span></a></li>
+            </div>
+            <div class="item">
+                    <li><a href="devolver">
+                            <img class="peque" src="https://png.icons8.com/material/1600/return.png" alt="">
+                    <span class="nav-icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+                    <span class="remove_text">Devolver alquiler</span></a></li>
+            </div>
+            <div class="item">
+                    <li><a href="lista_usuarios">
+                            <img class="peque" src="https://image.flaticon.com/icons/png/512/35/35620.png" alt="">
+                    <span class="nav-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                    <span class="remove_text">Lista de usuarios</span> </a></li>
+            </div>
+            <div class="item">
+                        <li><a href="historial">
+                                <img class="peque" src="https://image.flaticon.com/icons/png/512/35/35620.png" alt="">
+                        <span class="nav-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                        <span class="remove_text">Historial</span> </a></li>
+                </div>
+      </ul>
+  </aside>
+  <!-- fin barra vertical -->
+
+        <div class="container-fluid">
+           
+            <div class="col col-md-9">
+                <div class="row">
+                    <div class="col col-md-5">
+                        <h4>Estadisticas:</h4>
+                                <span class="pull-right strong">Usuarios activos</span>
+                                 <div class="progress">
+                                    <div id="001" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="15"aria-valuemin="0" aria-valuemax="100" style="width:50%">{{porc_activos}}%</div>
+                                </div>
+                            
+                                <span class="pull-right strong">Peliculas alquiladas</span>
+                                 <div class="progress">
+                                    <div id="002" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30"aria-valuemin="0" aria-valuemax="100" style="width:0%">{{porc_alquiladas}}%</div>
+                                </div>
+                            
+                                <span class="pull-right strong">Peliculas nuevas</span>
+                                 <div class="progress">
+                                    <div id="003" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="8"aria-valuemin="0" aria-valuemax="100" style="width:0%">{{porc_nuevas}}%</div>
+                                </div>
+                    </div>
+                    <div class="col col-md-5">
+                        <h4>Datos:</h4>
+                        <h6 > Pelicula mas vista: {{mejor_peli}}</h6>
+                        <h6> Cantidad de peliculas: {{peliculas.length}}</h6>
+                        <h6> Cantidad de peliculas alquiladas: {{alquiladas}}</h6>
+                        <h6> Cantidad de usuarios: {{usuarios.length}}</h6>
+                        <h6> Cantidad de usuarios activos: {{activos}}</h6>
+                        <h6> Cantidad de peliculas nuevas: {{nuevas}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+<!-- fin contenedor principal -->

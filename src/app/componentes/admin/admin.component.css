@@ -1,0 +1,145 @@
+
+ 
+
+/*=======================SIDEBAR NAV START=======================*/
+.hit_sidebar{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow: hidden;
+    border: none;
+    transition: all .3s cubic-bezier(.55,0,.1,1);
+    padding-top: 64px;
+    background: #fff;
+    width: 280px;
+    background-color: rgb(26, 27, 27)
+/*    transform: translate3d(-280px,0,0);*/
+}
+.small_sidebar{    
+    width: 80px;
+    min-width: 64px;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+   
+}
+.sidebar-open {
+    min-width: 274px;
+    width: 274px;
+    transform: translate3d(0,0,0);
+}
+.sidebar-slide-push {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    left: -15px;
+}
+
+
+/************************SIDEBAR NAV START END************************/
+aside ul{
+    margin:0px;
+    padding:0px;
+}
+aside ul li{
+    list-style-type: none;
+}
+aside ul li a{
+    font-family: 'TitilliumWeb';
+    display:block;
+    text-decoration:none;
+    text-align:left;
+    color: #c8c8c8;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 18px 20px 16px;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+aside ul li a:hover{
+    background-color:#1A293F;
+    color:#fff;
+    text-decoration: none;
+    
+}
+a:focus {
+    outline: none;
+    outline-offset: none;
+}
+
+aside a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color:#1A293F;
+}
+aside ul li a .nav-icon{
+    margin-right:15px;
+    font-size:20px!important;
+}
+
+.remove_text{
+     transition-delay: 2s;
+     display:inline-block; position:relative; left: 30%;
+}
+.text_hide{
+    display:none;
+     transition-delay: 2s;
+}
+aside ul li a span{
+    display: table-cell;
+    padding-left:15px;
+}
+.text2
+{
+    transition-delay: 2s;
+    color: white;
+    position: relative;
+    top: 0%;
+    left: 15%;
+}
+.hit_sidebar 
+{
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 400px;
+}
+.imgadmin
+{
+    position: relative;
+    left: 30%;
+    width: 100px;
+    height: 100px;
+}
+.peque
+{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    display:inline-block; position:absolute;
+}
+.item
+{
+    width:600px; margin:0 auto;  position:relative;
+}
+.main-container
+{
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    flex: auto;
+}
+.container-fluid
+{
+    position: relative;
+    background-color:rgb(141, 163, 136);
+   opacity:0.6;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+    
+}

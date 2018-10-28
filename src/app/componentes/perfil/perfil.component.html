@@ -1,0 +1,25 @@
+<aside class="profile-card">
+  <div class="card" >
+      <div class="card-body">
+          <div class="container">
+              <div class="row">
+                    <div class="profile-header-container">   
+                    <div class="profile-header-img">
+                            <img class="img-circle" src="https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/de/e2/f2/dee2f23c-6cc5-9435-338b-bfb4ea0e3457/source/512x512bb.jpg" />
+                            <!-- badge -->
+                            <div class="rank-label-container">
+                                <span class="label label-default rank-label">Disfrute sus peliculas!</span>
+                            </div>
+                        </div>
+                    </div> 
+              </div>
+            </div>
+        <h5 class="card-title">Hola {{actual.nombre}} {{actual.apellido}}!</h5>
+        <p class="card-text"> correo: {{actual.correo}} </p>
+        <p class="card-text"> telefono: {{actual.telefono}} </p>
+        <a href="" class="btn btn-primary">Inicio</a>
+        <a (click)="editar()" class="btn btn-primary">Editar Perfil</a>
+        <a (click)="ver_historial()" class="btn btn-primary">Historial</a>
+      </div>
+    </div>
+</aside>

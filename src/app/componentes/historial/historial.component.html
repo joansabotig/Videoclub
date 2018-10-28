@@ -1,0 +1,20 @@
+<div class="mob" style="text-align-last: center">
+    <h3>Historial</h3>
+    <div class="container">
+      <div class="row">
+              <div class="history_wrap" ></div>
+                      <div *ngFor="let Historial of historial1" class="history_list">
+                          
+                          
+                          <div class="history_status">
+                              <span class="label label-success">Pelicula</span>
+                              <span class="history_total">{{cual(Historial.pelicula_id).titulo}}</span>
+                          </div>
+                      </div>
+
+            </div>
+            
+        </div>
+        <button (click)="go_inicio()" class="btn btn-dark">Volver al inicio</button>
+    </div>
+  

@@ -1,0 +1,27 @@
+<div classs="div1" *ngIf="bandera" >
+  <div class="div2">
+    <div class="alert alert-secondary" role="alert">
+      Titulo: <a class="alert-link">{{actual.titulo}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Descripcion: <a class="alert-link">{{actual.descripcion}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Puntuacion: <a class="alert-link">{{actual.valoracion / actual.cantidadAlquileres}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Estado: 
+      <a class="alert-link" *ngIf="actual.alquilada">Alquilada</a>
+      <a class="alert-link" *ngIf="!actual.alquilada">Disponible</a>
+
+      
+    </div>
+    <button *ngIf="!actual.alquilada"(click)="alquilar()" class="btn btn-secondary btn-lg" style="Background-color: #BD2A06;">Alquilar</button>
+
+    <button (click)="terminar()" class="btn btn-secondary btn-lg" >Terminar</button>
+  </div>
+  <div class="div3" >
+      <img src="{{actual.imagen}}" style="height:250px;"> 
+  </div>
+  
+</div>

@@ -1,0 +1,194 @@
+{
+  "pelicula": [
+    {
+      "id": 1,
+      "titulo": "El rey leon 1",
+      "descripcion": "Un leon que es rey",
+      "imagen": "https://is4-ssl.mzstatic.com/image/thumb/Video/93/65/49/mzl.hhvoxjge.jpg/268x0w.jpg",
+      "genero": "infantil",
+      "alquilada": 1,
+      "valoracion": 40,
+      "cantidadAlquileres": 7
+    },
+    {
+      "id": 2,
+      "titulo": "Titanic",
+      "descripcion": "Vas a llorar",
+      "imagen": "http://cinemitas.com/wp-content/uploads/2016/07/Titanic-704052013-large.jpg",
+      "genero": "romantica",
+      "alquilada": 1,
+      "valoracion": 18,
+      "cantidadAlquileres": 3
+    },
+    {
+      "imagen": "https://imagessl3.casadellibro.com/m/ig/3/5202263.jpg",
+      "titulo": "Lo mejor de mi",
+      "descripcion": "una pelicula por ahi",
+      "genero": "Romantica",
+      "alquilada": 1,
+      "cantidadAlquileres": 3,
+      "valoracion": 25,
+      "id": 3
+    },
+    {
+      "imagen": "https://cuidadoinfantil.com/wp-content/uploads/2009/08/tarzan.jpg",
+      "titulo": "Tarzan",
+      "descripcion": "Pelicula",
+      "genero": "infantil",
+      "alquilada": 1,
+      "cantidadAlquileres": 2,
+      "valoracion": 15,
+      "id": 4
+    },
+    {
+      "imagen": "https://cd.cinescape.com.pe/cinescape-325x457-183493.jpg",
+      "titulo": "Rapidos y furiosos 8",
+      "descripcion": "autos",
+      "genero": "accion",
+      "alquilada": 1,
+      "cantidadAlquileres": 3,
+      "valoracion": 15,
+      "id": 5
+    },
+    {
+      "imagen": "https://imagessl7.casadellibro.com/m/ig/7/1277127.jpg",
+      "titulo": "tom y jerry",
+      "descripcion": "divertida",
+      "genero": "infantil",
+      "alquilada": 1,
+      "cantidadAlquileres": 1,
+      "valoracion": 5,
+      "id": 6
+    },
+    {
+      "titulo": "jim y el durazno gigante",
+      "descripcion": "durazno grande",
+      "genero": "infantil",
+      "alquilada": 1,
+      "cantidadAlquileres": 1,
+      "valoracion": 5,
+      "imagen": "https://pp.vk.me/7S6EmEV92JjIy3QVjazcSfLU3IR4I62Nqt8uYA/sWUs421CjQU.jpg",
+      "id": 7
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nombre": "joan",
+      "apellido": "sabotig",
+      "usuario": "joan96",
+      "contraseña": "sabotig96",
+      "telefono:": "154292149",
+      "correo": "joansabotig96@gmail.com",
+      "estado": "online"
+    },
+    {
+      "id": 2,
+      "nombre": "pepecito",
+      "apellido": "zapata",
+      "usuario": "pepe1",
+      "contraseña": "zapata1",
+      "telefono:": "154112233",
+      "correo": "pepezapata@gmail.com",
+      "estado": "offline",
+      "telefono": "22"
+    },
+    {
+      "nombre": "roma",
+      "apellido": "sabo",
+      "usuario": "romi",
+      "contraseña": "sabo",
+      "telefono": "4223366",
+      "correo": "roman@algo.com",
+      "estado": "offline",
+      "id": 3
+    },
+    {
+      "nombre": "aa1",
+      "apellido": "aa1",
+      "usuario": "aa1",
+      "contraseña": "aa1",
+      "telefono": "456",
+      "correo": "asdas",
+      "estado": "offline",
+      "id": 4
+    },
+    {
+      "nombre": "prueba1",
+      "apellido": "apeprueba",
+      "usuario": "user1",
+      "contraseña": "pass1",
+      "telefono": "426",
+      "correo": "mio",
+      "estado": "offline",
+      "id": 5
+    }
+  ],
+  "historial": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "pelicula_id": 1
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "pelicula_id": 5
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 3
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 5,
+      "id": 4
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 4,
+      "id": 5
+    },
+    {
+      "user_id": 4,
+      "pelicula_id": 1,
+      "id": 6
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 7
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 2,
+      "id": 8
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 3,
+      "id": 9
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 4,
+      "id": 10
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 5,
+      "id": 11
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 6,
+      "id": 12
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 7,
+      "id": 13
+    }
+  ]
+}

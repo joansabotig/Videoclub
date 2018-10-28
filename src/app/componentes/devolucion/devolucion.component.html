@@ -1,0 +1,26 @@
+<div classs="div1" *ngIf="bandera" >
+  <div class="div2">
+    <div class="alert alert-secondary" role="alert">
+      Titulo: <a class="alert-link">{{actual.titulo}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Descripcion: <a class="alert-link">{{actual.descripcion}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Puntuacion: <a class="alert-link">{{actual.valoracion / actual.cantidadAlquileres}}</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Estado: 
+      <a class="alert-link" *ngIf="actual.alquilada">Alquilada</a>
+      <a class="alert-link" *ngIf="!actual.alquilada">Disponible</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Calificar:  Puntuacion 0-10 <input type="number" min="0" max="10"   [(ngModel)]="puntuacion">
+    </div>
+    <button (click)="devolver()" class="btn btn-secondary btn-lg" style="Background-color: rgb(57, 114, 3);">Devolver</button>
+  </div>
+  <div class="div3" >
+      <img src="{{actual.imagen}}" style="height:250px;"> 
+  </div>
+  
+</div>

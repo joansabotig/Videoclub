@@ -1,0 +1,44 @@
+<section class="login-block">
+    <div class="row" style="margin-right: 0px;">
+		<div class="col-md-4 login-sec">
+		    <h2 class="text-center">Iniciar Sesion</h2>
+		    <form class="login-form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="text-uppercase" style="color:antiquewhite">Nombre de Usuario</label>
+                    <input type="text" name="username" id="username" class="form-control" [(ngModel)]='user'>
+    
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="text-uppercase" style="color:antiquewhite">Contraseña</label>
+                    <input type="password" name="password" id="password"  class="form-control" [(ngModel)]='pass'>
+                </div>
+  
+  
+                <div class="form-check">
+  
+                    <button type="button" class="btn btn-dark float-right"(click)="entrar()">Entrar</button>
+                </div>
+
+                <div class=" d-none d-md-block">
+                        <div class="banner-text">
+                            <h2>Video-Club de Joan Sabotig</h2>
+                            <p>El mejor Video-club Online. Busque su pelicula favorita con la mejor calidad, encuentre nuevas peliculas y no deje de disfrutar  </p>
+                        </div>	
+                    </div>
+  
+            </form>
+		</div>
+		<div class="col-md-8 banner-sec">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                   
+                </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="https://pre00.deviantart.net/1029/th/pre/i/2014/156/c/c/render___the_mask_by_shimomt-d6c9ovj.png" alt="First slide">
+                        </div>
+                    </div>	   
+		    </div>
+	    </div>
+    </div>
+</section>
