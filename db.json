@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "El rey leon 1",
-      "descripcion": "Un leon que es rey",
+      "descripcion": "Tras la muerte de su padre, un león vuelve a enfrentar a su malvado tío y reclamar el trono de Rey de la Selva.",
       "imagen": "https://is4-ssl.mzstatic.com/image/thumb/Video/93/65/49/mzl.hhvoxjge.jpg/268x0w.jpg",
       "genero": "infantil",
       "alquilada": 1,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "titulo": "Titanic",
-      "descripcion": "Vas a llorar",
+      "descripcion": "El RMS Titanic​ fue un transatlántico británico, el mayor barco del mundo al finalizar su construcción, que se hundió en la noche del 14 a la madrugada del 15 de abril de 1912 durante su viaje inaugural desde Southampton a Nueva York.",
       "imagen": "http://cinemitas.com/wp-content/uploads/2016/07/Titanic-704052013-large.jpg",
       "genero": "romantica",
       "alquilada": 1,
@@ -23,7 +23,7 @@
     {
       "imagen": "https://imagessl3.casadellibro.com/m/ig/3/5202263.jpg",
       "titulo": "Lo mejor de mi",
-      "descripcion": "una pelicula por ahi",
+      "descripcion": "El funeral de un amigo cercano reúne a dos enamorados de la escuela secundaria, quienes descubren que se aman después de 20 años de estar separados.",
       "genero": "Romantica",
       "alquilada": 1,
       "cantidadAlquileres": 3,
@@ -33,27 +33,27 @@
     {
       "imagen": "https://cuidadoinfantil.com/wp-content/uploads/2009/08/tarzan.jpg",
       "titulo": "Tarzan",
-      "descripcion": "Pelicula",
+      "descripcion": " Tarzán fue rescatado y criado por una colonia de monos después de que sus padres fueran asesinados por el sanguinario Sabor. A medida que pasaron los años, se convirtió en un hombre simio, protegiendo a todos los simios, y nunca conociendo el mundo exterior, aparte de la selva.",
       "genero": "infantil",
-      "alquilada": 1,
-      "cantidadAlquileres": 2,
-      "valoracion": 15,
+      "alquilada": null,
+      "cantidadAlquileres": 3,
+      "valoracion": 20,
       "id": 4
     },
     {
       "imagen": "https://cd.cinescape.com.pe/cinescape-325x457-183493.jpg",
       "titulo": "Rapidos y furiosos 8",
-      "descripcion": "autos",
+      "descripcion": "El ex convicto Dominic Toretto se une a su viejo adversario, Brian O'Conner, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una organización criminal que se dedica a introducir heroína en la ciudad.",
       "genero": "accion",
       "alquilada": 1,
-      "cantidadAlquileres": 3,
-      "valoracion": 15,
+      "cantidadAlquileres": 4,
+      "valoracion": 23,
       "id": 5
     },
     {
       "imagen": "https://imagessl7.casadellibro.com/m/ig/7/1277127.jpg",
       "titulo": "tom y jerry",
-      "descripcion": "divertida",
+      "descripcion": "Tom y Jerry son dos personajes animados, un gato y un ratón, que protagonizaron un gran número de cortometrajes",
       "genero": "infantil",
       "alquilada": 1,
       "cantidadAlquileres": 1,
@@ -62,11 +62,11 @@
     },
     {
       "titulo": "jim y el durazno gigante",
-      "descripcion": "durazno grande",
+      "descripcion": "Un amable huérfano británico escapa de sus crueles tías para navegar por el mar en un durazno gigante con seis bichos amigables.",
       "genero": "infantil",
       "alquilada": 1,
-      "cantidadAlquileres": 1,
-      "valoracion": 5,
+      "cantidadAlquileres": 2,
+      "valoracion": 10,
       "imagen": "https://pp.vk.me/7S6EmEV92JjIy3QVjazcSfLU3IR4I62Nqt8uYA/sWUs421CjQU.jpg",
       "id": 7
     }
@@ -189,6 +189,16 @@
       "user_id": 1,
       "pelicula_id": 7,
       "id": 13
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 5,
+      "id": 14
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 7,
+      "id": 15
     }
   ]
 }

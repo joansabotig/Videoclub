@@ -1,27 +1,52 @@
-<div classs="div1" *ngIf="bandera" >
+<div class="div1" *ngIf="bandera" >
+    <div class="container">
+        <div class="row">
+        <svg viewBox="-50 0 2000 300" class="desc01">
+          <symbol id="s-text">
+          <text class="texto_titulo" x="50%" y="40%">{{actual.titulo}} </text>
+        </symbol>
+      
+        <g class = "g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+        </div>
+      </div>
   <div class="div2">
-    <div class="alert alert-secondary" role="alert">
-      Titulo: <a class="alert-link">{{actual.titulo}}</a>
-    </div>
-    <div class="alert alert-secondary" role="alert">
-      Descripcion: <a class="alert-link">{{actual.descripcion}}</a>
-    </div>
-    <div class="alert alert-secondary" role="alert">
-      Puntuacion: <a class="alert-link">{{actual.valoracion / actual.cantidadAlquileres}}</a>
-    </div>
-    <div class="alert alert-secondary" role="alert">
-      Estado: 
-      <a class="alert-link" *ngIf="actual.alquilada">Alquilada</a>
-      <a class="alert-link" *ngIf="!actual.alquilada">Disponible</a>
 
       
-    </div>
-    <button *ngIf="!actual.alquilada"(click)="alquilar()" class="btn btn-secondary btn-lg" style="Background-color: #BD2A06;">Alquilar</button>
 
-    <button (click)="terminar()" class="btn btn-secondary btn-lg" >Terminar</button>
+
+<div class="container" style="margin-top:5%;">
+    <div class="row">
+        <div class="col-md-12 ">
+            <span class="text-effect">{{actual.descripcion}}</span>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top:5%;">
+    <div class="row">
+        <div class="col-md-12 ">
+            <span class="text-effect">Puntuacion: {{actual.valoracion / actual.cantidadAlquileres | number:'1.0-2'}}</span>
+        </div>
+    </div>
+</div>
+
+    <div class="botones" style="margin-top:15%;">
+        <button *ngIf="!actual.alquilada"(click)="alquilar()" class="btn btn-secondary btn-lg" style="Background-color: #BD2A06;">Alquilar</button>
+
+        <button (click)="terminar()" class="btn btn-secondary btn-lg" >Terminar</button>
+    </div>
+   
   </div>
+
+
   <div class="div3" >
-      <img src="{{actual.imagen}}" style="height:250px;"> 
+      <img src="{{actual.imagen}}"  class="img-peli"> 
+      <img *ngIf="actual.alquilada" src="https://serviciosinmobiliarioscastelar.com/wp-content/uploads/2017/05/alquilada1.png" class="img-alq">
   </div>
-  
 </div>

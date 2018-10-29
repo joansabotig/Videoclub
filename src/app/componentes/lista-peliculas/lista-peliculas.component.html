@@ -13,9 +13,15 @@
         <!-- en vez de tareas era retorno. -->
         <tr>
           <th scope="row">{{Pelicula.titulo}}</th>
-          <td>{{Pelicula.valoracion / Pelicula.cantidadAlquileres}} </td>
-          <td *ngIf="Pelicula.alquilada"> Alquilada</td>
-          <td *ngIf="!Pelicula.alquilada"> Disponible</td>
+          <td>{{Pelicula.valoracion / Pelicula.cantidadAlquileres | number:'1.0-2'}}  </td>
+          <td *ngIf="Pelicula.alquilada" style="width: 30%;">
+            
+             <img class="img-alquiler" alt="" src="http://gaeimport.com/wp-content/uploads/2014/09/alquilado-600x340.png">
+          </td>
+          <td *ngIf="!Pelicula.alquilada" style="width: 30%;">
+             
+             <img class="img-alquiler" style="height: 40%;" src="http://2.bp.blogspot.com/-lWZ0DB_qVZQ/VL6bUVq3AZI/AAAAAAAAC2k/qsxpssXlqew/s1600/Disponible.png" alt="">
+          </td>
         </tr>
       </tbody>
     </table>

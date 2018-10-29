@@ -1,5 +1,51 @@
+<div class="container2">
+        <hr>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <div class="word_section" style="text-align:center;margin:0 auto">
+            <span class="m1">H</span>
+            <span class="m2">I</span>
+            <span class="m1">S</span>
+            <span class="m2">T</span>
+            <span class="m1">O</span>
+            <span class="m2">R</span>
+            <span class="m1">I</span>
+            <span class="m1">A</span>
+            <span class="m2">L</span>
+    </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+            <div class="row">
+                <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+                    <ul class="event-list" *ngFor="let Historial of historial">
+                        <li>
+                            
+                                <img src="{{cual(Historial.pelicula_id).imagen}}" alt="">
+                           					
+                            <div class="info">
+                                <h2 class="title">{{cual(Historial.pelicula_id).titulo}}</h2>
+                                <p class="desc"> 
+                                    Cliente: 
+                                    {{quien(Historial.user_id).nombre}} 
+                                    {{quien(Historial.user_id).apellido}}
+                                </p>
+                                <p class="desc">
+                                    {{cual(Historial.pelicula_id).descripcion}}
+                                </p>
+                            </div>						
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!--         
 <div class="mob" style="text-align-last: center">
-  <h3>Historial</h3>
   <div class="container">
     <div class="row">
             <div class="history_wrap" ></div>
@@ -22,4 +68,4 @@
           </div>
       </div>
       <button (click)="go_inicio()" class="btn btn-dark">Volver al inicio</button>
-  </div>
+  </div> -->

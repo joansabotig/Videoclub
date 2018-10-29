@@ -143,3 +143,24 @@ aside ul li a span{
    filter:alpha(opacity=60); /* IE < 9.0 */
     
 }
+.progress-bar
+{
+    height: 100%;
+    background-color: rgba(15, 92, 41, 0.774);
+    color: black;
+    font-size: x-large;
+
+}
+.progress
+{
+    height: 15%;
+    
+}
+h6
+{
+    font-size: x-large;
+}
+h4
+{
+    font-size: xx-large;
+}
