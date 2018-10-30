@@ -3,6 +3,7 @@ import { Usuario } from '../clases/usuario';
 import { HttpClient } from '@angular/common/http';
 import { Historial } from '../clases/historial';
 import { UserServiceService } from './user-service.service';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,7 @@ export class Service2Service {
   usuario_actual:Usuario=null;
   historiales:Historial[]=[];
   host: string ='http://localhost:3000/';
+  admin:number =1;
 
   constructor(private http: HttpClient, private userService:UserServiceService) {
     this.usuario_actual = userService.getUserLoggedIn();

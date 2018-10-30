@@ -1,7 +1,7 @@
 .div1
 {
     width:90%;
-    height:100%;
+    height:90%;
     background:rgba(173, 173, 173, 0.39);
     color:rgba(92, 92, 92, 0.644);
     border-radius: 50px;
@@ -10,25 +10,22 @@
 .img-peli
 {
     position: absolute;
-    height: 70%;
+    height: 60%;
     top:20%;
     left:50%;
 }
 .img-alq
 {
     position: absolute;
-    height: 35%;
-    margin-top: 8%;
-    left:50%;
+    height: 33%;
+    margin-top: 0%;
+    left:48%;
     opacity: .8;
 }
 .div2
 {
-    
-    float:left;
-    margin: 2px 0px 0px 5px; 
-    padding:20px 0 10px 0px;
-    width:40%;
+    float:left;   
+    width:45%;
     height:100%;
 }
 .div3
@@ -156,6 +153,9 @@ svg {
 }
 .botones
 {
+    position: absolute;
+    bottom:15%;
+    left:5%;
     margin-top: 5%;
     text-anchor: end;
     display: flex;

@@ -35,7 +35,7 @@
       "titulo": "Tarzan",
       "descripcion": " Tarzán fue rescatado y criado por una colonia de monos después de que sus padres fueran asesinados por el sanguinario Sabor. A medida que pasaron los años, se convirtió en un hombre simio, protegiendo a todos los simios, y nunca conociendo el mundo exterior, aparte de la selva.",
       "genero": "infantil",
-      "alquilada": null,
+      "alquilada": 4,
       "cantidadAlquileres": 3,
       "valoracion": 20,
       "id": 4
@@ -69,6 +69,16 @@
       "valoracion": 10,
       "imagen": "https://pp.vk.me/7S6EmEV92JjIy3QVjazcSfLU3IR4I62Nqt8uYA/sWUs421CjQU.jpg",
       "id": 7
+    },
+    {
+      "alquilada": null,
+      "titulo": "Hercules",
+      "descripcion": "El hijo de zeus baja a la tierra por culpa de hades, e intenta convertirse en un dios para regresar con su padre.",
+      "genero": "Infantil",
+      "cantidadAlquileres": 0,
+      "valoracion": 0,
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/511V6QBV6PL._SY445_.jpg",
+      "id": 8
     }
   ],
   "usuario": [
@@ -80,7 +90,8 @@
       "contraseña": "sabotig96",
       "telefono:": "154292149",
       "correo": "joansabotig96@gmail.com",
-      "estado": "online"
+      "estado": "offline",
+      "telefono": "4261640"
     },
     {
       "id": 2,
@@ -110,7 +121,7 @@
       "contraseña": "aa1",
       "telefono": "456",
       "correo": "asdas",
-      "estado": "offline",
+      "estado": "online",
       "id": 4
     },
     {
@@ -199,6 +210,11 @@
       "user_id": 1,
       "pelicula_id": 7,
       "id": 15
+    },
+    {
+      "user_id": 4,
+      "pelicula_id": 4,
+      "id": 16
     }
   ]
 }
