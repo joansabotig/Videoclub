@@ -1,0 +1,7 @@
+Admin:  usuario joan96
+        password: sabotig96
+users:
+    -   usuario: pepe1
+        password: zapata1
+    -   usuario: romi
+        password: sabo
