@@ -43,6 +43,10 @@ export class LoginComponent {
           );
         }
       }
+        if(this.service2.usuario_actual ==null)
+      {
+        alert('usuario invalido');
+      }
     },
     err=> console.log(err)
     );
