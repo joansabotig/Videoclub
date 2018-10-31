@@ -20,15 +20,13 @@ export class LoginComponent {
   constructor(private service2: Service2Service,private router: Router,private userService:UserServiceService) { }
   entrar()
   {
-    
     var users:Usuario[];
     this.service2.obtenerUsuarios().subscribe(
       data=>{
-        console.log(this.user+' '+ this.pass)
       users = data;
       for(var i =0; i<users.length; i++)
       {
-        if(users[i].usuario == this.user && users[i].contraseña==this.pass && users[i].estado == 'offline')
+        if(users[i].usuario == this.user && users[i].contraseña==this.pass)
         {
           this.loggeado = true;
           this.usuario_actual = users[i];

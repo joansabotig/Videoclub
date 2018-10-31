@@ -15,6 +15,6 @@ export class Usuario {
         this.contraseña = contraseña;
         this.telefono = telefono;
         this.correo = correo;
-        this.estado = "offline";
+        this.estado = "sin alquiler";
     }
 }

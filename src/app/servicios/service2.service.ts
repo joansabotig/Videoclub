@@ -23,6 +23,36 @@ export class Service2Service {
   {
     return this.http.get<Usuario[]>(this.host + 'usuario');
   }
+  alquilar(user_id:number)
+  {
+    var inquilino:Usuario;
+    this.obtenerUsuario(user_id).subscribe(data=>{
+      inquilino=data;
+      inquilino.estado = 'con alquiler';
+      this.userService.setUserLoggedIn(inquilino);
+      this.http.patch(this.host + 'usuario/'+user_id,inquilino).subscribe();
+    })
+  }
+  eliminar(id:number)
+  {
+    return this.http.delete(this.host + 'usuario/'+id);
+  }
+  devolver(user_id:number)
+  {
+    if(user_id == this.usuario_actual.id)
+    {
+      
+      this.usuario_actual.estado  = 'sin alquiler';
+      this.userService.setUserLoggedIn(this.usuario_actual);
+    }
+    var inquilino:Usuario;
+    this.obtenerUsuario(user_id).subscribe(data=>{
+      inquilino=data;
+      inquilino.estado = 'sin alquiler';
+      this.http.patch(this.host + 'usuario/'+user_id,inquilino).subscribe();
+    })
+  }
+
   borrarUsuario(id:number)
   {
     return this.http.delete(this.host + 'usuario/'+id);
@@ -48,14 +78,13 @@ export class Service2Service {
   }
   conectar(user:Usuario)
   {
-    user.estado = 'online';
+    // user.estado = 'online';
     this.usuario_actual = user;
-    
     return this.http.patch(this.host + 'usuario/'+user.id,user);
   }
   desconectar()
   {
-    this.usuario_actual.estado = 'offline';
+    // this.usuario_actual.estado = 'offline';
     this.userService.unsetUserLogged();
     return this.http.patch(this.host + 'usuario/'+this.usuario_actual.id,this.usuario_actual);
   }
@@ -69,7 +98,7 @@ export class Service2Service {
       users = data;
       for(var i =0; i<users.length; i++)
       {
-        if(users[i].usuario == user && users[i].contraseña==pass &&users[i].estado=='offline')
+        if(users[i].usuario == user && users[i].contraseña==pass)
         {
           bandera = true;
           this.usuario_actual = users[i];

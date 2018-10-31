@@ -90,6 +90,7 @@ aside ul li a .nav-icon{
 
 .remove_text{
      transition-delay: 2s;
+     font-size: 150%;
      display:inline-block; position:relative; left: 30%;
 }
 .text_hide{
@@ -133,8 +134,8 @@ h2
 .peque
 {
     display: flex;
-    width: 7%;
-    height: 70%;
+    width: 8%;
+    height: 75%;
     display:inline-block; position:absolute;
 }
 .item

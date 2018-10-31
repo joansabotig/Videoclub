@@ -74,7 +74,7 @@ export class AdminComponent  {
     this.activos=0;
     for(var i =0; i<this.usuarios.length;i++)
     {
-      if(this.usuarios[i].estado=='online')
+      if(this.usuarios[i].estado=='con alquiler')
       {
         this.activos++;
       }

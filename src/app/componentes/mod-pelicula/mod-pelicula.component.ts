@@ -34,7 +34,10 @@ export class ModPeliculaComponent  {
       err=>console.log(err)
     );
   }
-
+  eliminar()
+  {
+    this.servicio1.eliminar(this.actual.id).subscribe(data=>{this.router.navigate(['']);});
+  }
   modificar()
   {
     this.servicio1.modificar(this.actual,this.titulo,this.descripcion,this.imagen,this.genero).subscribe(

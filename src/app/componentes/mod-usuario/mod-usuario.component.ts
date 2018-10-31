@@ -38,7 +38,10 @@ export class ModUsuarioComponent  {
       err=>console.log(err)
     );
   }
-
+  eliminar()
+  {
+    this.servicio2.eliminar(this.actual.id).subscribe(data=>{this.router.navigate(['']);});
+  }
   modificar()
   {
     this.servicio2.modificar(this.actual,this.nombre,this.apellido,this.usuario,this.contrasenia, this.correo,this.telefono).subscribe(

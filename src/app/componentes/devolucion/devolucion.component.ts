@@ -29,6 +29,7 @@ export class DevolucionComponent{
   }
   devolver()
   {
+    this.service2.devolver(this.actual.alquilada);
     this.servicio1.devolver(this.actual,this.puntuacion).subscribe(data=>{
       this.router.navigate(['/admin']);
     },

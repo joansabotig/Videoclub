@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Pelicula } from '../clases/pelicula';
 import { HttpClient } from '@angular/common/http';
 import { Historial } from '../clases/historial';
+import { Service2Service } from './service2.service';
 //este servicio va a controlar las peliculas
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class Service1Service {
  
 
   host: string ='http://localhost:3000/'
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient, private service2:Service2Service) { 
   }
   obtenerPeliculas()
   {
@@ -28,7 +29,6 @@ export class Service1Service {
   }
   modificar(peli:Pelicula,titulo:string, descripcion:string, imagen:string, genero:string)
   {
-    
     peli.titulo = titulo;
     peli.descripcion = descripcion;
     peli.imagen = imagen;
@@ -41,6 +41,10 @@ export class Service1Service {
     console.log(imagen);
     var nueva:Pelicula= new Pelicula(titulo,descripcion,imagen,genero);
     return this.http.post(this.host + 'pelicula', nueva);
+  }
+  eliminar(id:number)
+  {
+    return this.http.delete(this.host + 'pelicula/'+id);
   }
   alquilar(peli:Pelicula, id:number)
   {

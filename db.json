@@ -6,9 +6,9 @@
       "descripcion": "Tras la muerte de su padre, un león vuelve a enfrentar a su malvado tío y reclamar el trono de Rey de la Selva.",
       "imagen": "https://is4-ssl.mzstatic.com/image/thumb/Video/93/65/49/mzl.hhvoxjge.jpg/268x0w.jpg",
       "genero": "infantil",
-      "alquilada": 1,
-      "valoracion": 40,
-      "cantidadAlquileres": 7
+      "alquilada": null,
+      "valoracion": 65,
+      "cantidadAlquileres": 12
     },
     {
       "id": 2,
@@ -16,9 +16,9 @@
       "descripcion": "El RMS Titanic​ fue un transatlántico británico, el mayor barco del mundo al finalizar su construcción, que se hundió en la noche del 14 a la madrugada del 15 de abril de 1912 durante su viaje inaugural desde Southampton a Nueva York.",
       "imagen": "http://cinemitas.com/wp-content/uploads/2016/07/Titanic-704052013-large.jpg",
       "genero": "romantica",
-      "alquilada": 1,
-      "valoracion": 18,
-      "cantidadAlquileres": 3
+      "alquilada": null,
+      "valoracion": 28,
+      "cantidadAlquileres": 5
     },
     {
       "imagen": "https://imagessl3.casadellibro.com/m/ig/3/5202263.jpg",
@@ -26,8 +26,8 @@
       "descripcion": "El funeral de un amigo cercano reúne a dos enamorados de la escuela secundaria, quienes descubren que se aman después de 20 años de estar separados.",
       "genero": "Romantica",
       "alquilada": 1,
-      "cantidadAlquileres": 3,
-      "valoracion": 25,
+      "cantidadAlquileres": 6,
+      "valoracion": 40,
       "id": 3
     },
     {
@@ -35,9 +35,9 @@
       "titulo": "Tarzan",
       "descripcion": " Tarzán fue rescatado y criado por una colonia de monos después de que sus padres fueran asesinados por el sanguinario Sabor. A medida que pasaron los años, se convirtió en un hombre simio, protegiendo a todos los simios, y nunca conociendo el mundo exterior, aparte de la selva.",
       "genero": "infantil",
-      "alquilada": 4,
-      "cantidadAlquileres": 3,
-      "valoracion": 20,
+      "alquilada": null,
+      "cantidadAlquileres": 6,
+      "valoracion": 35,
       "id": 4
     },
     {
@@ -45,9 +45,9 @@
       "titulo": "Rapidos y furiosos 8",
       "descripcion": "El ex convicto Dominic Toretto se une a su viejo adversario, Brian O'Conner, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una organización criminal que se dedica a introducir heroína en la ciudad.",
       "genero": "accion",
-      "alquilada": 1,
-      "cantidadAlquileres": 4,
-      "valoracion": 23,
+      "alquilada": null,
+      "cantidadAlquileres": 6,
+      "valoracion": 33,
       "id": 5
     },
     {
@@ -55,30 +55,20 @@
       "titulo": "tom y jerry",
       "descripcion": "Tom y Jerry son dos personajes animados, un gato y un ratón, que protagonizaron un gran número de cortometrajes",
       "genero": "infantil",
-      "alquilada": 1,
-      "cantidadAlquileres": 1,
-      "valoracion": 5,
+      "alquilada": null,
+      "cantidadAlquileres": 3,
+      "valoracion": 15,
       "id": 6
     },
     {
       "titulo": "jim y el durazno gigante",
       "descripcion": "Un amable huérfano británico escapa de sus crueles tías para navegar por el mar en un durazno gigante con seis bichos amigables.",
       "genero": "infantil",
-      "alquilada": 1,
-      "cantidadAlquileres": 2,
-      "valoracion": 10,
+      "alquilada": null,
+      "cantidadAlquileres": 3,
+      "valoracion": 15,
       "imagen": "https://pp.vk.me/7S6EmEV92JjIy3QVjazcSfLU3IR4I62Nqt8uYA/sWUs421CjQU.jpg",
       "id": 7
-    },
-    {
-      "alquilada": null,
-      "titulo": "Hercules",
-      "descripcion": "El hijo de zeus baja a la tierra por culpa de hades, e intenta convertirse en un dios para regresar con su padre.",
-      "genero": "Infantil",
-      "cantidadAlquileres": 0,
-      "valoracion": 0,
-      "imagen": "https://images-na.ssl-images-amazon.com/images/I/511V6QBV6PL._SY445_.jpg",
-      "id": 8
     }
   ],
   "usuario": [
@@ -90,7 +80,7 @@
       "contraseña": "sabotig96",
       "telefono:": "154292149",
       "correo": "joansabotig96@gmail.com",
-      "estado": "offline",
+      "estado": "con alquiler",
       "telefono": "4261640"
     },
     {
@@ -101,7 +91,7 @@
       "contraseña": "zapata1",
       "telefono:": "154112233",
       "correo": "pepezapata@gmail.com",
-      "estado": "offline",
+      "estado": "sin alquiler",
       "telefono": "22"
     },
     {
@@ -111,7 +101,7 @@
       "contraseña": "sabo",
       "telefono": "4223366",
       "correo": "roman@algo.com",
-      "estado": "offline",
+      "estado": "sin alquiler",
       "id": 3
     },
     {
@@ -121,18 +111,8 @@
       "contraseña": "aa1",
       "telefono": "456",
       "correo": "asdas",
-      "estado": "online",
+      "estado": "sin alquiler",
       "id": 4
-    },
-    {
-      "nombre": "prueba1",
-      "apellido": "apeprueba",
-      "usuario": "user1",
-      "contraseña": "pass1",
-      "telefono": "426",
-      "correo": "mio",
-      "estado": "offline",
-      "id": 5
     }
   ],
   "historial": [
@@ -215,6 +195,66 @@
       "user_id": 4,
       "pelicula_id": 4,
       "id": 16
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 17
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 4,
+      "id": 18
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 19
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 5,
+      "id": 20
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 6,
+      "id": 21
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 3,
+      "id": 22
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 23
+    },
+    {
+      "user_id": 4,
+      "pelicula_id": 2,
+      "id": 24
+    },
+    {
+      "user_id": 4,
+      "pelicula_id": 4,
+      "id": 25
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 3,
+      "id": 26
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 1,
+      "id": 27
+    },
+    {
+      "user_id": 1,
+      "pelicula_id": 3,
+      "id": 28
     }
   ]
 }
